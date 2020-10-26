@@ -58,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1603727359104</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed Startup Page">
+      <created>1603735745122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603735745122</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed Startup Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Startup Page" />
   </component>
 </project>
