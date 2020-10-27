@@ -3,8 +3,13 @@ import 'package:ChatterFly/screens/welcome_screen.dart';
 import 'package:ChatterFly/screens/login_screen.dart';
 import 'package:ChatterFly/screens/registration_screen.dart';
 import 'package:ChatterFly/screens/chat_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(ChatterFly());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(ChatterFly());
+}
 
 class ChatterFly extends StatelessWidget {
   @override
