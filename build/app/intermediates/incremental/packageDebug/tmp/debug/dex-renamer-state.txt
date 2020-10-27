@@ -1,4 +1,4 @@
-#Mon Oct 26 22:39:06 IST 2020
+#Tue Oct 27 11:17:34 IST 2020
 base.0=D\:\\AndroidProjects\\ChatterFly\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex
