@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "376094892811",
+    "firebase_url": "https://chatterfly-5a720.firebaseio.com",
+    "project_id": "chatterfly-5a720",
+    "storage_bucket": "chatterfly-5a720.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376094892811:android:ab1688ee6ee2642f04b80e",
+        "android_client_info": {
+          "package_name": "com.Saanjh.ChatterFly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376094892811-7f09vj1uh5guorp9ltgt3eoi3tfv17h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiyjgoV04R8q0eYtCMSHOPmjkrYe2mpPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376094892811-7f09vj1uh5guorp9ltgt3eoi3tfv17h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
