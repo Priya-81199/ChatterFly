@@ -40,50 +40,54 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     return Scaffold(
 
       backgroundColor: animation.value,
-      body: Container(
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("images/bg.jpg"),
-              fit: BoxFit.cover,
-            ),
-        ),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Row(
+      body:  Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("images/bg.jpg"),
+                fit: BoxFit.cover,
+              ),
+          ),
+          child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  Hero(
-                    tag: 'logo',
-                    child: Container(
-                      child: Image.asset('images/butterfly.gif'),
-                      height: 100.0,
-                    ),
-                  ),
-                  TypewriterAnimatedTextKit(
-                    text : ['ChatterFly'],
-                    textStyle: TextStyle(
-                      fontSize: 45.0,
-                      fontWeight: FontWeight.w900,
+                  Row(
+                    children: <Widget>[
+                      Hero(
+                        tag: 'logo',
+                        child: Container(
+                          child: Image.asset('images/butterfly.gif'),
+                          height: 100.0,
+                        ),
                       ),
+                      Flexible(
+                        child: TypewriterAnimatedTextKit(
+                          text : ['ChatterFly'],
+                          textStyle: TextStyle(
+                            fontSize: 40.0,
+                            fontWeight: FontWeight.w900,
+                            ),
+                        ),
+                      ),
+                    ],
                   ),
+                  SizedBox(
+                    height: 48.0,
+                  ),
+                  RoundedButton(title: 'Log in',colour: Colors.lightGreen,tag: 'login', onPressed: () {
+                    Navigator.pushNamed(context, LoginScreen.id);
+                  },),
+                  RoundedButton(title: 'Register',colour: Colors.green, tag : 'register',onPressed: () {
+                    Navigator.pushNamed(context, RegistrationScreen.id);
+                  },),
                 ],
               ),
-              SizedBox(
-                height: 48.0,
-              ),
-              RoundedButton(title: 'Log in',colour: Colors.lightGreen,tag: 'login', onPressed: () {
-                Navigator.pushNamed(context, LoginScreen.id);
-              },),
-              RoundedButton(title: 'Register',colour: Colors.green, tag : 'register',onPressed: () {
-                Navigator.pushNamed(context, RegistrationScreen.id);
-              },),
-            ],
-          ),
+            ),
+
         ),
-      ),
+      
     );
   }
 }
