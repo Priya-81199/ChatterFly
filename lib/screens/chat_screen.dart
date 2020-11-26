@@ -65,7 +65,6 @@ class _ChatScreenState extends State<ChatScreen> {
                 //Implement logout functionality
                 _auth.signOut();
                 Navigator.pop(context);
-
               }),
         ],
         title: Center(child: Text('⚡️Chatterfly')),
